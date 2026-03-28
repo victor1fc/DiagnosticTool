@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "DeviceMonitor.Infraestructure/1.0.0": {
+        "dependencies": {
+          "DeviceMonitor.Application": "1.0.0",
+          "DeviceMonitor.Domain": "1.0.0"
+        },
+        "runtime": {
+          "DeviceMonitor.Infraestructure.dll": {}
+        }
+      },
+      "DeviceMonitor.Application/1.0.0": {
+        "dependencies": {
+          "DeviceMonitor.Domain": "1.0.0"
+        },
+        "runtime": {
+          "DeviceMonitor.Application.dll": {}
+        }
+      },
+      "DeviceMonitor.Domain/1.0.0": {
+        "runtime": {
+          "DeviceMonitor.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DeviceMonitor.Infraestructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DeviceMonitor.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DeviceMonitor.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

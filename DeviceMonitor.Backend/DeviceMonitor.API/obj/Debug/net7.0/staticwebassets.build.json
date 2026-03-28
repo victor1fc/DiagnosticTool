@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "J21A/bFleN4nogJlBBGZWYvNc2VjALbwACIixoLP26Y=",
+  "Source": "DeviceMonitor.API",
+  "BasePath": "_content/DeviceMonitor.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

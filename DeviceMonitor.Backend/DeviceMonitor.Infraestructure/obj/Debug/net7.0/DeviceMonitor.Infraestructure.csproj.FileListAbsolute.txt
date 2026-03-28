@@ -1,0 +1,17 @@
+C:\Users\VictorFernandesCampo\source\repos\BackEnd\Infraestructure\bin\Debug\net7.0\DeviceMonitor.Infraestructure.deps.json
+C:\Users\VictorFernandesCampo\source\repos\BackEnd\Infraestructure\bin\Debug\net7.0\DeviceMonitor.Infraestructure.dll
+C:\Users\VictorFernandesCampo\source\repos\BackEnd\Infraestructure\bin\Debug\net7.0\DeviceMonitor.Infraestructure.pdb
+C:\Users\VictorFernandesCampo\source\repos\BackEnd\Infraestructure\bin\Debug\net7.0\DeviceMonitor.Application.dll
+C:\Users\VictorFernandesCampo\source\repos\BackEnd\Infraestructure\bin\Debug\net7.0\DeviceMonitor.Domain.dll
+C:\Users\VictorFernandesCampo\source\repos\BackEnd\Infraestructure\bin\Debug\net7.0\DeviceMonitor.Application.pdb
+C:\Users\VictorFernandesCampo\source\repos\BackEnd\Infraestructure\bin\Debug\net7.0\DeviceMonitor.Domain.pdb
+C:\Users\VictorFernandesCampo\source\repos\BackEnd\Infraestructure\obj\Debug\net7.0\DeviceMonitor.Infraestructure.csproj.AssemblyReference.cache
+C:\Users\VictorFernandesCampo\source\repos\BackEnd\Infraestructure\obj\Debug\net7.0\DeviceMonitor.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VictorFernandesCampo\source\repos\BackEnd\Infraestructure\obj\Debug\net7.0\DeviceMonitor.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\VictorFernandesCampo\source\repos\BackEnd\Infraestructure\obj\Debug\net7.0\DeviceMonitor.Infraestructure.AssemblyInfo.cs
+C:\Users\VictorFernandesCampo\source\repos\BackEnd\Infraestructure\obj\Debug\net7.0\DeviceMonitor.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\VictorFernandesCampo\source\repos\BackEnd\Infraestructure\obj\Debug\net7.0\DeviceMonitor.Infraestructure.csproj.CopyComplete
+C:\Users\VictorFernandesCampo\source\repos\BackEnd\Infraestructure\obj\Debug\net7.0\DeviceMonitor.Infraestructure.dll
+C:\Users\VictorFernandesCampo\source\repos\BackEnd\Infraestructure\obj\Debug\net7.0\refint\DeviceMonitor.Infraestructure.dll
+C:\Users\VictorFernandesCampo\source\repos\BackEnd\Infraestructure\obj\Debug\net7.0\DeviceMonitor.Infraestructure.pdb
+C:\Users\VictorFernandesCampo\source\repos\BackEnd\Infraestructure\obj\Debug\net7.0\ref\DeviceMonitor.Infraestructure.dll
