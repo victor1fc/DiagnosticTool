@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "DeviceMonitor.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/DeviceMonitor.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DeviceMonitor.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DeviceMonitor.Domain/1.0.0": {
+      "type": "project",
+      "path": "../DeviceMonitor.Domain/DeviceMonitor.Domain.csproj",
+      "msbuildProject": "../DeviceMonitor.Domain/DeviceMonitor.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "DeviceMonitor.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\VictorFernandesCampo\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\VictorFernandesCampo\\Documents\\GitHub\\DiagnosticTool\\DeviceMonitor.Backend\\DeviceMonitor.Domain\\DeviceMonitor.Domain.csproj": {
+              "projectPath": "C:\\Users\\VictorFernandesCampo\\Documents\\GitHub\\DiagnosticTool\\DeviceMonitor.Backend\\DeviceMonitor.Domain\\DeviceMonitor.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

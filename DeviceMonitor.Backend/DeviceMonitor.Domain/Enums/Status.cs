@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DeviceMonitor.Application.DTOs
+namespace DeviceMonitor.Domain.Enums
 {
-    public class CommandRequest
-    {      
-        public string Command { get; set; }
+    public enum Status
+    {
+        Unknow = 0,
+        Success = 1,
+        Error   = 2,
     }
 }

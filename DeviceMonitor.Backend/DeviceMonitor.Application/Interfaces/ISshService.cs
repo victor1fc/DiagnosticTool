@@ -8,7 +8,7 @@ namespace DeviceMonitor.Application.Interfaces
 {
     public interface ISshService
     {
-        public void Connect();
+        public bool Connect(string host, int port, string username, string password);
         public void ExecuteCommand();
         public void Disconnect();
     }

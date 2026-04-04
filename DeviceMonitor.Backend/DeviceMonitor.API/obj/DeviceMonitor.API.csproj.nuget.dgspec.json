@@ -119,7 +119,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\VictorFernandesCampo\\Documents\\GitHub\\DiagnosticTool\\DeviceMonitor.Backend\\DeviceMonitor.Domain\\DeviceMonitor.Domain.csproj": {
+                "projectPath": "C:\\Users\\VictorFernandesCampo\\Documents\\GitHub\\DiagnosticTool\\DeviceMonitor.Backend\\DeviceMonitor.Domain\\DeviceMonitor.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

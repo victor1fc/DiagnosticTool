@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using DeviceMonitor.Application.Interfaces;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace DeviceMonitor.CrossCutting.IoC
     {
         public static IServiceCollection AddProjectServices (this IServiceCollection services)
         {
-            //services.AddScoped<ISshService, SshService>();
+            services.AddScoped<ISshService, SshService>();
             return services;
         }
     }

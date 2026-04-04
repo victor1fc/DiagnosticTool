@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DeviceMonitor.Domain
 {
-    internal class CommandResult
+    public class CommandResult
     {
         public string Output { get; private set; }
         public int ExitCode {  get; private set; }
