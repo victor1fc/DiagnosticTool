@@ -1,12 +1,10 @@
 ﻿using DeviceMonitor.Application.DTOs;
 using DeviceMonitor.Application.Interfaces;
-using DeviceMonitor.Application.UseCases.Entities;
-using DeviceMonitor.Domain.Entities;
+using DeviceMonitor.Application.Services;
 using DeviceMonitor.Domain.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,8 +14,10 @@ namespace DeviceMonitor.Application.UseCases
     public class ConnectToDeviceUseCase 
     {
         ISshService sshService;
-        public ConnectToDeviceUseCase(ISshService sshService) {
+        DeviceService deviceService;
+        public ConnectToDeviceUseCase(ISshService sshService, DeviceService deviceService) {
             this.sshService = sshService;
+            this.deviceService = deviceService;
         }
 
         public ConnectResponse ConnectToDevice(ConnectRequest request)
@@ -30,56 +30,42 @@ namespace DeviceMonitor.Application.UseCases
             ConnectResponse status = new ConnectResponse();
 
             ConnectResponse hostValidation = ValidateHost(host);
-         
-            if (hostValidation.Status == Status.Success)
-            {
-                ConnectResponse portValidation = ValidatePort(port);
 
-                if (portValidation.Status == Status.Success)
-                {
-                    if (username != null)
-                    {
-                        if (password != null)
-                        {
-                            Device device = new Device(host, port);
-                            device.SetConnecting();
-                            if (sshService.Connect(host, port, username, password))
-                            {
-                                device.SetConnected();
-                                status.Status = Status.Success;
-                                return status;
-                            }
-                            else
-                            {
-                                device.SetDisconnected();
-                                status.Status = Status.Error;
-                                status.StatusMessage = "Connection failed!";
-                                return status;
-                            }
-                        }
-                        else
-                        {
-                            status.Status = Status.Error;
-                            status.StatusMessage = "Empty Password!";
-                            return status;
-                        }
-                    }
-                    else
-                    {
-                        status.Status = Status.Error;
-                        status.StatusMessage = "Empty Username!";
-                        return status;
-                    }
-                }
-                else
-                {
-                    return portValidation;
-                }
+            ConnectResponse portValidation = ValidatePort(port);
+
+            if (hostValidation.Status != Status.Success) return hostValidation;
+            if (portValidation.Status != Status.Success) return portValidation;
+            if (username == null) 
+            {
+                status.Status = Status.Error;
+                status.StatusMessage = "Empty Username!";
+                return status;
+            }
+            if(password == null)
+            {
+                status.Status = Status.Error;
+                status.StatusMessage = "Empty Password!";
+                return status;
+            }                              
+                   
+            this.deviceService.Initialize(host, port);           
+            this.deviceService.SetConnecting();
+
+            bool connected = sshService.Connect(host, port, username, password);
+            if (connected)
+            {
+                this.deviceService.SetConnected();
+                status.Status = Status.Success;
             }
             else
             {
-                return hostValidation;
-            }   
+                this.deviceService.SetDisconnected();
+                status.Status = Status.Error;
+                status.StatusMessage = "Connection failed!";
+            }
+            
+
+            return status;
         }
 
         private ConnectResponse ValidateHost(string host)
@@ -100,11 +86,22 @@ namespace DeviceMonitor.Application.UseCases
                 return status;
             }
             foreach (string Ip in IpParser)
-            {
-                if (int.Parse(Ip) > 255 || int.Parse(Ip) < 0)
+            {                
+                bool isInt = int.TryParse(Ip, out int ipNumber);
+
+                if(isInt)
+                {
+                    if (ipNumber > 255 || ipNumber < 0)
+                    {
+                        status.Status = Status.Error;
+                        status.StatusMessage = "Host must be between 0 and 255!";
+                        return status;
+                    }
+                }
+                else
                 {
                     status.Status = Status.Error;
-                    status.StatusMessage = "Host must be between 0 and 255!";
+                    status.StatusMessage = "Host must be only numbers!";
                     return status;
                 }
             }
@@ -116,7 +113,7 @@ namespace DeviceMonitor.Application.UseCases
         {
             ConnectResponse status = new ConnectResponse();
 
-            if (port < 0)
+            if (port < 0 || port > 65535)
             {
                 status.Status = Status.Error;
                 status.StatusMessage = "Invalid Port!";

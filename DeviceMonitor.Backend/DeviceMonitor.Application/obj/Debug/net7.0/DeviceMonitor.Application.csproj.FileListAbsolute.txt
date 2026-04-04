@@ -16,10 +16,14 @@ C:\Users\VictorFernandesCampo\source\repos\BackEnd\Application\obj\Debug\net7.0\
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.Application\bin\Debug\net7.0\DeviceMonitor.Application.deps.json
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.Application\bin\Debug\net7.0\DeviceMonitor.Application.dll
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.Application\bin\Debug\net7.0\DeviceMonitor.Application.pdb
+C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.Application\bin\Debug\net7.0\DeviceMonitor.Domain.dll
+C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.Application\bin\Debug\net7.0\DeviceMonitor.Domain.pdb
+C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.Application\obj\Debug\net7.0\DeviceMonitor.Application.csproj.AssemblyReference.cache
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.Application\obj\Debug\net7.0\DeviceMonitor.Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.Application\obj\Debug\net7.0\DeviceMonitor.Application.AssemblyInfoInputs.cache
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.Application\obj\Debug\net7.0\DeviceMonitor.Application.AssemblyInfo.cs
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.Application\obj\Debug\net7.0\DeviceMonitor.Application.csproj.CoreCompileInputs.cache
+C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.Application\obj\Debug\net7.0\DeviceMonitor.Application.csproj.CopyComplete
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.Application\obj\Debug\net7.0\DeviceMonitor.Application.dll
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.Application\obj\Debug\net7.0\refint\DeviceMonitor.Application.dll
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.Application\obj\Debug\net7.0\DeviceMonitor.Application.pdb

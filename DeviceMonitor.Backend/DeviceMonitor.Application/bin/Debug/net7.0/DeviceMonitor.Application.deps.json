@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {
       "DeviceMonitor.Application/1.0.0": {
+        "dependencies": {
+          "DeviceMonitor.Domain": "1.0.0"
+        },
         "runtime": {
           "DeviceMonitor.Application.dll": {}
+        }
+      },
+      "DeviceMonitor.Domain/1.0.0": {
+        "runtime": {
+          "DeviceMonitor.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
     "DeviceMonitor.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DeviceMonitor.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

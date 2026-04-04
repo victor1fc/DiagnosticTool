@@ -25,6 +25,9 @@
         }
       },
       "DeviceMonitor.Application/1.0.0": {
+        "dependencies": {
+          "DeviceMonitor.Domain": "1.0.0"
+        },
         "runtime": {
           "DeviceMonitor.Application.dll": {}
         }

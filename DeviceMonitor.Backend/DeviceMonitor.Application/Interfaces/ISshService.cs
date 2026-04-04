@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DeviceMonitor.Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace DeviceMonitor.Application.Interfaces
     public interface ISshService
     {
         public bool Connect(string host, int port, string username, string password);
-        public void ExecuteCommand();
+        public CommandResult ExecuteCommand(string command);
         public void Disconnect();
     }
 }

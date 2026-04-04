@@ -8,9 +8,9 @@ namespace DeviceMonitor.Domain
 {
     public class CommandResult
     {
-        public string Output { get; private set; }
-        public int ExitCode {  get; private set; }
-        public bool isError {  get; private set; }
+        public string Output { get;  set; }
+        public int ExitCode {  get;  set; }
+        public bool IsError {  get;  set; }
         
 
     }

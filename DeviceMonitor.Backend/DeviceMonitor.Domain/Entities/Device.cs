@@ -22,7 +22,7 @@ namespace DeviceMonitor.Domain.Entities
         public void SetConnected() {
             Status = DeviceStatus.Connected;
         }
-        public void setDisconnecting() { 
+        public void SetDisconnecting() { 
             Status = DeviceStatus.Disconnecting;
         }
         public void SetDisconnected() {
