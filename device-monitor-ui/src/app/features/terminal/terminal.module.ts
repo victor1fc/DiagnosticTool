@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { TerminalRoutingModule } from './terminal-routing.module';
 
-
 @NgModule({
   declarations: [],
   imports: [

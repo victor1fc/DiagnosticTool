@@ -85,10 +85,12 @@ C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Back
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\DeviceMonitor.Application.dll
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\DeviceMonitor.CrossCutting.dll
+C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\DeviceMonitor.Domain.dll
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\DeviceMonitor.Infrastructure.dll
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\DeviceMonitor.Application.pdb
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\DeviceMonitor.CrossCutting.pdb
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\DeviceMonitor.Infrastructure.pdb
+C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\DeviceMonitor.Domain.pdb
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\DeviceMonitor.API.csproj.AssemblyReference.cache
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\DeviceMonitor.API.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\DeviceMonitor.API.AssemblyInfoInputs.cache
@@ -110,5 +112,3 @@ C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Back
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\DeviceMonitor.API.pdb
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\DeviceMonitor.API.genruntimeconfig.cache
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\ref\DeviceMonitor.API.dll
-C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\DeviceMonitor.Domain.dll
-C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\DeviceMonitor.Domain.pdb

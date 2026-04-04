@@ -9,7 +9,6 @@
   <ItemGroup>
     <Folder Include="Persistence\" />
     <Folder Include="SSH\" />
-    <Folder Include="Services\" />
   </ItemGroup>
 
   <ItemGroup>
