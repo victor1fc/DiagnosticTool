@@ -13,11 +13,11 @@ namespace DeviceMonitor.Application.UseCases
 {
     public class ConnectToDeviceUseCase 
     {
-        ISshService sshService;
-        DeviceService deviceService;
+        ISshService SshService;
+        DeviceService DeviceService;
         public ConnectToDeviceUseCase(ISshService sshService, DeviceService deviceService) {
-            this.sshService = sshService;
-            this.deviceService = deviceService;
+            this.SshService = sshService;
+            this.DeviceService = deviceService;
         }
 
         public ConnectResponse ConnectToDevice(ConnectRequest request)
@@ -48,18 +48,18 @@ namespace DeviceMonitor.Application.UseCases
                 return status;
             }                              
                    
-            this.deviceService.Initialize(host, port);           
-            this.deviceService.SetConnecting();
+            this.DeviceService.Initialize(host, port);           
+            this.DeviceService.SetConnecting();
 
-            bool connected = sshService.Connect(host, port, username, password);
+            bool connected = SshService.Connect(host, port, username, password);
             if (connected)
             {
-                this.deviceService.SetConnected();
+                this.DeviceService.SetConnected();
                 status.Status = Status.Success;
             }
             else
             {
-                this.deviceService.SetDisconnected();
+                this.DeviceService.SetDisconnected();
                 status.Status = Status.Error;
                 status.StatusMessage = "Connection failed!";
             }

@@ -11,5 +11,6 @@ namespace DeviceMonitor.Application.DTOs
     {
         public Status Status { get; set; }
         public string Output { get; set; }
+        public string StatusMessage { get; set; }
     }
 }
