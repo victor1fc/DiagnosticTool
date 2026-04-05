@@ -11,8 +11,8 @@ namespace DeviceMonitor.Domain
     {
         private readonly List<string[]> _blocklist = new List<string[]>()
         {
-            new[] {"rm", "-rf" },
-            new[] { "shutdown"},
+            new[] {"rm", "-rf"},
+            new[] {"shutdown"},
             new[] {"mkfs"},
             new[] {"dd"}
         };
@@ -24,10 +24,10 @@ namespace DeviceMonitor.Domain
             {
                 if(IsMatch(tokens, blocked))
                 {
-                    return false;
+                    return true;
                 }
             }
-            return true;
+            return false;
         }
         private string Normalize (string input)
         {

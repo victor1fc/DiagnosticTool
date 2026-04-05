@@ -34,7 +34,7 @@ namespace DeviceMonitor.Application.UseCases
                 response.StatusMessage = "Command cannot be null or empty";
                 return response;
             }
-            if(!_commandBlocker.CheckIsBlocked(request.Command))
+            if(_commandBlocker.CheckIsBlocked(request.Command))
             {
                 response.Status = Status.Error;
                 response.StatusMessage = "Command not allowed: " + request.Command;

@@ -1,1 +1,42 @@
-<p>terminal works!</p>
+<ng-container *ngIf="!isConnected">
+  <div>
+    <label>IP:</label>
+    <input #host type="text" placeholder="192.168.1.1" />
+  </div>
+  <div>
+    <label>Porta:</label>
+    <input #port type="number" value="22" />
+  </div>
+  <div>
+    <label>Usuário:</label>
+    <input #username type="text" />
+  </div>
+  <div>
+    <label>Senha:</label>
+    <input #password type="password" />
+  </div>
+  <button
+    type="button"
+    [disabled]="!host.value || !username.value"
+    (click)="onConnect({ host: host.value, port: +port.value, username: username.value, password: password.value })">
+    Conectar
+  </button>
+</ng-container>
+
+<ng-container *ngIf="isConnected">
+  <div class="output-area">
+    <div *ngFor="let item of outputHistory" [class.error]="item.status !== 'Success'">
+      <span class="status-message">{{ item.statusMessage }}</span>
+      <pre>{{ item.output }}</pre>
+    </div>
+  </div>
+
+  <div class="command-input">
+    <span>$</span>
+    <input
+      #commandInput
+      type="text"
+      placeholder="Digite um comando..."
+      (keyup.enter)="onSendCommand(commandInput.value); commandInput.value = ''" />
+  </div>
+</ng-container>
