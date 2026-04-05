@@ -10,23 +10,36 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddProjectServices();
+builder.Services.AddCors( options =>
+{
+    options.AddPolicy("SignalRCors", policy =>
+    {
+        policy
+            .WithOrigins("http://localhost:4200")
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials();
+    });
+
+});
+
 builder.Services.AddSignalR();
 
-
 var app = builder.Build();
+
+
+app.UseRouting();
+
+app.UseCors("SignalRCors");
 app.MapHub<TerminalHub>("/terminal");
 
-
+app.UseHttpsRedirection();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-
-
-app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
