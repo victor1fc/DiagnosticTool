@@ -1,20 +1,32 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { SignalrService } from '../../../core/services/signalr/signalr.service';
+import { Subject } from 'rxjs';
+import { CommandRequest } from '../models/command-request';
+import { ConnectResponse } from '../models/connect-response';
+import { CommandResponse } from '../models/command-response';
+import { ConnectRequest } from '../models/connect-request';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TerminalService {
 
-  private api = "http://localhost:5000/api/device";
+  private connectionSubject = new Subject<ConnectResponse>();
+  public connection$ = this.connectionSubject.asObservable();
+  private commandSubject = new Subject<CommandResponse>();
+  public command$ = this.commandSubject.asObservable();
 
-  constructor(private httpClient : HttpClient) { }
-
-  connect(data : any){
-    return this.httpClient.post<any>(`${this.api}/connect`, data);
+  constructor(private signalrService: SignalrService) {
+    this.signalrService.on("ReceiveConnection", (response) => this.connectionSubject.next(response));
+    this.signalrService.on("ReceiveCommandOutput", (response) => this.commandSubject.next(response));
   }
 
-  sendCommand(command : string){
-    return this.httpClient.post<any>(`${this.api}/command`, {command});
+  connect(data: ConnectRequest): Promise<any> {
+    return this.signalrService.invoke("ConnectToDevice", data);
+  }
+
+  sendCommand(request: CommandRequest) {
+    return this.signalrService.invoke("SendCommand", request);
+
   }
 }

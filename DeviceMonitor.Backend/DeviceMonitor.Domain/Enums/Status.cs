@@ -8,7 +8,7 @@ namespace DeviceMonitor.Domain.Enums
 {
     public enum Status
     {
-        Unknow = 0,
+        Unknown = 0,
         Success = 1,
         Error   = 2,
     }
