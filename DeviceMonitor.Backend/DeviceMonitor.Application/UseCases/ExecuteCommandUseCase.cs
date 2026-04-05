@@ -13,18 +13,35 @@ namespace DeviceMonitor.Application.UseCases
 {
     public class ExecuteCommandUseCase
     {
-        ISshService SshService;
-        DeviceService DeviceService;
-        public ExecuteCommandUseCase(ISshService sshService, DeviceService deviceService)
+        readonly ISshService _sshService;
+        readonly DeviceService _deviceService;
+        readonly CommandBlocker _commandBlocker;
+
+        public ExecuteCommandUseCase(ISshService sshService, DeviceService deviceService, CommandBlocker commandBlocker)
         {         
-            this.SshService = sshService;
-            this.DeviceService = deviceService;
+            this._sshService = sshService;
+            this._deviceService = deviceService;
+            this._commandBlocker = commandBlocker;
         }
 
         public CommandResponse ExecuteCommand(CommandRequest request)
         {
             CommandResponse response = new CommandResponse();
-            DeviceStatus deviceStatus = this.DeviceService.GetDeviceStatus();
+
+            if(string.IsNullOrWhiteSpace(request.Command))
+            {
+                response.Status = Status.Error;
+                response.StatusMessage = "Command cannot be null or empty";
+                return response;
+            }
+            if(!_commandBlocker.CheckIsBlocked(request.Command))
+            {
+                response.Status = Status.Error;
+                response.StatusMessage = "Command not allowed: " + request.Command;
+                return response;
+            }
+
+            DeviceStatus deviceStatus = this._deviceService.GetDeviceStatus();
 
             if (deviceStatus != DeviceStatus.Connected)
             {
@@ -33,12 +50,13 @@ namespace DeviceMonitor.Application.UseCases
                 return response;
             }
 
-            CommandResult result = SshService.ExecuteCommand(request.Command);
+            CommandResult result = _sshService.ExecuteCommand(request.Command);
             if (result.IsError)
             {
                 response.Status = Status.Error;
                 response.StatusMessage = "Execute command failed.";
                 response.StatusMessage += " Exit Code:" + result.ExitCode.ToString();
+                response.Output = result.Output;
                 return response;
             }
 
