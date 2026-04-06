@@ -12,6 +12,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="SSH.NET" Version="2025.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\DeviceMonitor.Application\DeviceMonitor.Application.csproj" />
     <ProjectReference Include="..\DeviceMonitor.Domain\DeviceMonitor.Domain.csproj" />
   </ItemGroup>

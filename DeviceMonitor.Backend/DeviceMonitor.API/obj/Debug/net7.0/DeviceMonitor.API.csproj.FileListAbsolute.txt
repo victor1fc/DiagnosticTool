@@ -55,6 +55,12 @@ C:\Users\VictorFernandesCampo\source\repos\BackEnd\BackEnd\bin\Debug\net7.0\Syst
 C:\Users\VictorFernandesCampo\source\repos\BackEnd\BackEnd\bin\Debug\net7.0\System.Text.Encodings.Web.dll
 C:\Users\VictorFernandesCampo\source\repos\BackEnd\BackEnd\bin\Debug\net7.0\System.Threading.Channels.dll
 C:\Users\VictorFernandesCampo\source\repos\BackEnd\BackEnd\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
+C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\DeviceMonitor.API.csproj.AssemblyReference.cache
+C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\DeviceMonitor.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\DeviceMonitor.API.AssemblyInfoInputs.cache
+C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\DeviceMonitor.API.AssemblyInfo.cs
+C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\DeviceMonitor.API.csproj.CoreCompileInputs.cache
+C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\DeviceMonitor.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\appsettings.json
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\DeviceMonitor.API.exe
@@ -62,8 +68,10 @@ C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Back
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\DeviceMonitor.API.runtimeconfig.json
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\DeviceMonitor.API.dll
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\DeviceMonitor.API.pdb
+C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Abstractions.dll
@@ -74,10 +82,12 @@ C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Back
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\Microsoft.OpenApi.dll
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\Renci.SshNet.dll
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\System.Formats.Asn1.dll
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\System.IO.Pipelines.dll
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\System.Net.WebSockets.WebSocketProtocol.dll
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\System.Text.Encodings.Web.dll
@@ -91,13 +101,6 @@ C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Back
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\DeviceMonitor.CrossCutting.pdb
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\DeviceMonitor.Infrastructure.pdb
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\bin\Debug\net7.0\DeviceMonitor.Domain.pdb
-C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\DeviceMonitor.API.csproj.AssemblyReference.cache
-C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\DeviceMonitor.API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\DeviceMonitor.API.AssemblyInfoInputs.cache
-C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\DeviceMonitor.API.AssemblyInfo.cs
-C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\DeviceMonitor.API.csproj.CoreCompileInputs.cache
-C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\DeviceMonitor.API.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\DeviceMonitor.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\staticwebassets\msbuild.DeviceMonitor.API.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\staticwebassets\msbuild.build.DeviceMonitor.API.props
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.DeviceMonitor.API.props
@@ -112,3 +115,4 @@ C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Back
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\DeviceMonitor.API.pdb
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\DeviceMonitor.API.genruntimeconfig.cache
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\ref\DeviceMonitor.API.dll
+C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.API\obj\Debug\net7.0\DeviceMonitor.API.MvcApplicationPartsAssemblyInfo.cs

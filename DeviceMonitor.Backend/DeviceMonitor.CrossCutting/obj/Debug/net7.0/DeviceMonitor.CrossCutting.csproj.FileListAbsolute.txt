@@ -17,6 +17,11 @@ C:\Users\VictorFernandesCampo\source\repos\BackEnd\CrossCutting\obj\Debug\net7.0
 C:\Users\VictorFernandesCampo\source\repos\BackEnd\CrossCutting\obj\Debug\net7.0\refint\DeviceMonitor.CrossCutting.dll
 C:\Users\VictorFernandesCampo\source\repos\BackEnd\CrossCutting\obj\Debug\net7.0\DeviceMonitor.CrossCutting.pdb
 C:\Users\VictorFernandesCampo\source\repos\BackEnd\CrossCutting\obj\Debug\net7.0\ref\DeviceMonitor.CrossCutting.dll
+C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.CrossCutting\obj\Debug\net7.0\DeviceMonitor.CrossCutting.csproj.AssemblyReference.cache
+C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.CrossCutting\obj\Debug\net7.0\DeviceMonitor.CrossCutting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.CrossCutting\obj\Debug\net7.0\DeviceMonitor.CrossCutting.AssemblyInfoInputs.cache
+C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.CrossCutting\obj\Debug\net7.0\DeviceMonitor.CrossCutting.AssemblyInfo.cs
+C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.CrossCutting\obj\Debug\net7.0\DeviceMonitor.CrossCutting.csproj.CoreCompileInputs.cache
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.CrossCutting\bin\Debug\net7.0\DeviceMonitor.CrossCutting.deps.json
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.CrossCutting\bin\Debug\net7.0\DeviceMonitor.CrossCutting.dll
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.CrossCutting\bin\Debug\net7.0\DeviceMonitor.CrossCutting.pdb
@@ -26,11 +31,6 @@ C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Back
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.CrossCutting\bin\Debug\net7.0\DeviceMonitor.Application.pdb
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.CrossCutting\bin\Debug\net7.0\DeviceMonitor.Infrastructure.pdb
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.CrossCutting\bin\Debug\net7.0\DeviceMonitor.Domain.pdb
-C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.CrossCutting\obj\Debug\net7.0\DeviceMonitor.CrossCutting.csproj.AssemblyReference.cache
-C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.CrossCutting\obj\Debug\net7.0\DeviceMonitor.CrossCutting.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.CrossCutting\obj\Debug\net7.0\DeviceMonitor.CrossCutting.AssemblyInfoInputs.cache
-C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.CrossCutting\obj\Debug\net7.0\DeviceMonitor.CrossCutting.AssemblyInfo.cs
-C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.CrossCutting\obj\Debug\net7.0\DeviceMonitor.CrossCutting.csproj.CoreCompileInputs.cache
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.CrossCutting\obj\Debug\net7.0\DeviceMonitor.CrossCutting.csproj.CopyComplete
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.CrossCutting\obj\Debug\net7.0\DeviceMonitor.CrossCutting.dll
 C:\Users\VictorFernandesCampo\Documents\GitHub\DiagnosticTool\DeviceMonitor.Backend\DeviceMonitor.CrossCutting\obj\Debug\net7.0\refint\DeviceMonitor.CrossCutting.dll

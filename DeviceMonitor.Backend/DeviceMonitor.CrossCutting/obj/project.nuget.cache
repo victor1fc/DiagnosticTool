@@ -1,10 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "75s+ae4WUYYzyR8pmuL+af1PrHZvZOwRYuoK+rC8VgVDSOCQI/9K8oZ0mtXCGtf94XcoSea5/jM5GHvkqpCkLA==",
+  "dgSpecHash": "X6jC3HC3SeBXsCmP12To8w4+7bBttzyjfOljUfC+0BSnVcY45i5/+aqyZDElCef5Re8iu9bSDQfkYQ9d9jUiqA==",
   "success": true,
   "projectFilePath": "C:\\Users\\VictorFernandesCampo\\Documents\\GitHub\\DiagnosticTool\\DeviceMonitor.Backend\\DeviceMonitor.CrossCutting\\DeviceMonitor.CrossCutting.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\VictorFernandesCampo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.5\\microsoft.extensions.dependencyinjection.abstractions.10.0.5.nupkg.sha512"
+    "C:\\Users\\VictorFernandesCampo\\.nuget\\packages\\bouncycastle.cryptography\\2.6.2\\bouncycastle.cryptography.2.6.2.nupkg.sha512",
+    "C:\\Users\\VictorFernandesCampo\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\VictorFernandesCampo\\.nuget\\packages\\microsoft.extensions.configuration.binder\\8.0.0\\microsoft.extensions.configuration.binder.8.0.0.nupkg.sha512",
+    "C:\\Users\\VictorFernandesCampo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.5\\microsoft.extensions.dependencyinjection.abstractions.10.0.5.nupkg.sha512",
+    "C:\\Users\\VictorFernandesCampo\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.3\\microsoft.extensions.logging.abstractions.8.0.3.nupkg.sha512",
+    "C:\\Users\\VictorFernandesCampo\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\VictorFernandesCampo\\.nuget\\packages\\ssh.net\\2025.1.0\\ssh.net.2025.1.0.nupkg.sha512",
+    "C:\\Users\\VictorFernandesCampo\\.nuget\\packages\\system.formats.asn1\\8.0.2\\system.formats.asn1.8.0.2.nupkg.sha512"
   ],
   "logs": []
 }

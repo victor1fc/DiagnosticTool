@@ -19,16 +19,24 @@
           "DeviceMonitor.API.dll": {}
         }
       },
+      "BouncyCastle.Cryptography/2.6.2": {
+        "runtime": {
+          "lib/net6.0/BouncyCastle.Cryptography.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.6.2.46322"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authentication.Abstractions/2.3.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Abstractions": "2.3.0",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         }
       },
       "Microsoft.AspNetCore.Authorization/2.3.0": {
         "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         }
       },
@@ -120,7 +128,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Http.Extensions": "2.3.0",
           "Microsoft.AspNetCore.Routing.Abstractions": "2.3.0",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.ObjectPool": "8.0.11",
           "Microsoft.Extensions.Options": "8.0.2"
         }
@@ -152,7 +160,7 @@
           "Microsoft.AspNetCore.SignalR.Common": "1.2.0",
           "Microsoft.AspNetCore.SignalR.Protocols.Json": "1.2.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "System.IO.Pipelines": "8.0.0",
           "System.Reflection.Emit": "4.7.0",
           "System.Threading.Channels": "8.0.0"
@@ -185,6 +193,17 @@
         },
         "runtime": {
           "lib/net7.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Binder/8.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Configuration.Binder.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.23.53103"
           }
@@ -228,7 +247,7 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Diagnostics.Abstractions": "8.0.1",
           "Microsoft.Extensions.FileProviders.Abstractions": "8.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2"
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3"
         },
         "runtime": {
           "lib/net7.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
@@ -237,15 +256,14 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
-          "System.Diagnostics.DiagnosticSource": "8.0.1"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5"
         },
         "runtime": {
           "lib/net7.0/Microsoft.Extensions.Logging.Abstractions.dll": {
             "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.1024.46610"
+            "fileVersion": "8.0.1325.6609"
           }
         }
       },
@@ -299,6 +317,19 @@
           }
         }
       },
+      "SSH.NET/2025.1.0": {
+        "dependencies": {
+          "BouncyCastle.Cryptography": "2.6.2",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
+          "System.Formats.Asn1": "8.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Renci.SshNet.dll": {
+            "assemblyVersion": "2025.1.0.1",
+            "fileVersion": "2025.1.0.1"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.5.0": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
@@ -343,6 +374,14 @@
           "lib/net7.0/System.Diagnostics.DiagnosticSource.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.424.16909"
+          }
+        }
+      },
+      "System.Formats.Asn1/8.0.2": {
+        "runtime": {
+          "lib/net7.0/System.Formats.Asn1.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1325.6609"
           }
         }
       },
@@ -399,6 +438,8 @@
         "dependencies": {
           "DeviceMonitor.Application": "1.0.0",
           "DeviceMonitor.Infrastructure": "1.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "8.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5"
         },
         "runtime": {
@@ -413,7 +454,8 @@
       "DeviceMonitor.Infrastructure/1.0.0": {
         "dependencies": {
           "DeviceMonitor.Application": "1.0.0",
-          "DeviceMonitor.Domain": "1.0.0"
+          "DeviceMonitor.Domain": "1.0.0",
+          "SSH.NET": "2025.1.0"
         },
         "runtime": {
           "DeviceMonitor.Infrastructure.dll": {}
@@ -426,6 +468,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "BouncyCastle.Cryptography/2.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7oWOcvnntmMKNzDLsdxAYqApt+AjpRpP2CShjMfIa3umZ42UQMvH0tl1qAliYPNYO6vTdcGMqnRrCPmsfzTI1w==",
+      "path": "bouncycastle.cryptography/2.6.2",
+      "hashPath": "bouncycastle.cryptography.2.6.2.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication.Abstractions/2.3.0": {
       "type": "package",
@@ -588,6 +637,13 @@
       "path": "microsoft.extensions.configuration.abstractions/8.0.0",
       "hashPath": "microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512"
     },
+    "Microsoft.Extensions.Configuration.Binder/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mBMoXLsr5s1y2zOHWmKsE9veDcx8h1x/c3rz4baEdQKTeDcmQAPNbB54Pi/lhFO3K431eEq6PFbMgLaa6PHFfA==",
+      "path": "microsoft.extensions.configuration.binder/8.0.0",
+      "hashPath": "microsoft.extensions.configuration.binder.8.0.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.DependencyInjection.Abstractions/10.0.5": {
       "type": "package",
       "serviceable": true,
@@ -616,12 +672,12 @@
       "path": "microsoft.extensions.hosting.abstractions/8.0.1",
       "hashPath": "microsoft.extensions.hosting.abstractions.8.0.1.nupkg.sha512"
     },
-    "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+    "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-nroMDjS7hNBPtkZqVBbSiQaQjWRDxITI8Y7XnDs97rqG3EbzVTNLZQf7bIeUJcaHOV8bca47s1Uxq94+2oGdxA==",
-      "path": "microsoft.extensions.logging.abstractions/8.0.2",
-      "hashPath": "microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512"
+      "sha512": "sha512-dL0QGToTxggRLMYY4ZYX5AMwBb+byQBd/5dMiZE07Nv73o6I5Are3C7eQTh7K2+A4ct0PVISSr7TZANbiNb2yQ==",
+      "path": "microsoft.extensions.logging.abstractions/8.0.3",
+      "hashPath": "microsoft.extensions.logging.abstractions.8.0.3.nupkg.sha512"
     },
     "Microsoft.Extensions.ObjectPool/8.0.11": {
       "type": "package",
@@ -665,6 +721,13 @@
       "path": "newtonsoft.json/11.0.2",
       "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
     },
+    "SSH.NET/2025.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jrnbtf0ItVaXAe6jE8X/kSLa6uC+0C+7W1vepcnRQB/rD88qy4IxG7Lf1FIbWmkoc4iVXv0pKrz+Wc6J4ngmHw==",
+      "path": "ssh.net/2025.1.0",
+      "hashPath": "ssh.net.2025.1.0.nupkg.sha512"
+    },
     "Swashbuckle.AspNetCore/6.5.0": {
       "type": "package",
       "serviceable": true,
@@ -706,6 +769,13 @@
       "sha512": "sha512-vaoWjvkG1aenR2XdjaVivlCV9fADfgyhW5bZtXT23qaEea0lWiUljdQuze4E31vKM7ZWJaSUsbYIKE3rnzfZUg==",
       "path": "system.diagnostics.diagnosticsource/8.0.1",
       "hashPath": "system.diagnostics.diagnosticsource.8.0.1.nupkg.sha512"
+    },
+    "System.Formats.Asn1/8.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yUsFqNGa7tbwm5QOOnOR3VSoh8a0Yki39mTbhOnErdbg8hVSFtrK0EXerj286PXcegiF1LkE7lL++qqMZW5jIQ==",
+      "path": "system.formats.asn1/8.0.2",
+      "hashPath": "system.formats.asn1.8.0.2.nupkg.sha512"
     },
     "System.IO.Pipelines/8.0.0": {
       "type": "package",

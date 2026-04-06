@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "023aRnsLEYNC5GeNgv/MejaGzcl8hDdEUazCnnY8bOmvjLCOYN24hw1XX0KqcuujvBMJQUFWvBtMkZRk8mcJ0g==",
+  "dgSpecHash": "0IB9rLkgkImLCEo1mLDzBOLl5iWGMpux39kW9zb5vm6CwDiPmV78dRpwvpPaUV/VuqWis2nMOn/eINkBGjOJDA==",
   "success": true,
   "projectFilePath": "C:\\Users\\VictorFernandesCampo\\Documents\\GitHub\\DiagnosticTool\\DeviceMonitor.Backend\\DeviceMonitor.Infraestructure\\DeviceMonitor.Infrastructure.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\VictorFernandesCampo\\.nuget\\packages\\bouncycastle.cryptography\\2.6.2\\bouncycastle.cryptography.2.6.2.nupkg.sha512",
+    "C:\\Users\\VictorFernandesCampo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\VictorFernandesCampo\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.3\\microsoft.extensions.logging.abstractions.8.0.3.nupkg.sha512",
+    "C:\\Users\\VictorFernandesCampo\\.nuget\\packages\\ssh.net\\2025.1.0\\ssh.net.2025.1.0.nupkg.sha512",
+    "C:\\Users\\VictorFernandesCampo\\.nuget\\packages\\system.formats.asn1\\8.0.2\\system.formats.asn1.8.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

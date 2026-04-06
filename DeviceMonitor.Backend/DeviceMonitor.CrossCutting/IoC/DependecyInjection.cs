@@ -3,6 +3,7 @@ using DeviceMonitor.Application.Services;
 using DeviceMonitor.Application.UseCases;
 using DeviceMonitor.Domain;
 using DeviceMonitor.Infrastructure.Services;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -15,10 +16,19 @@ namespace DeviceMonitor.CrossCutting.IoC
     public static class DependecyInjection
     {
 
-        public static IServiceCollection AddProjectServices (this IServiceCollection services)
+        public static IServiceCollection AddProjectServices (this IServiceCollection services, IConfiguration configuration)
         {
             //services.AddScoped<ISshService, SshService>();
-            services.AddSingleton<ISshService, DeviceSimulator>();
+            bool useSimulator = configuration.GetValue<bool>("UseSimulator");
+            if (useSimulator)
+            {
+               services.AddSingleton<ISshService, DeviceSimulator>();
+            }
+            else
+            {
+               services.AddSingleton<ISshService, SshService>();
+            }
+            
             services.AddSingleton<DeviceService>();
             services.AddSingleton<ConnectToDeviceUseCase>();
             services.AddSingleton<CommandBlocker>();
