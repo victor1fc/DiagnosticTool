@@ -1,4 +1,19 @@
 <ng-container *ngIf="!isConnected">
+
+    <div class="card flex flex-col gap-4">
+        <div class="font-semibold text-xl">Inline</div>
+        <div class="flex flex-wrap items-start gap-6">
+            <div class="field">
+                <label for="firstname1" class="sr-only">Firstname</label>
+                <input pInputText id="firstname1" type="text" placeholder="Firstname" />
+            </div>
+            <div class="field">
+                <label for="lastname1" class="sr-only">Lastname</label>
+                <input pInputText id="lastname1" type="text" placeholder="Lastname" />
+            </div>
+            <p-button label="Conectar" [fluid]="false"></p-button>
+        </div>
+    </div>
   <div>
     <label>IP:</label>
     <input #host type="text" placeholder="192.168.1.1" />

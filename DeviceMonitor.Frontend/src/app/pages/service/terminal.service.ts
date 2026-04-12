@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
-import { SignalrService } from '../../../core/services/signalr/signalr.service';
+import { SignalrService } from '../../core/services/signalr/signalr.service';
 import { Subject } from 'rxjs';
-import { CommandRequest } from '../models/command-request';
-import { ConnectResponse } from '../models/connect-response';
-import { CommandResponse } from '../models/command-response';
-import { ConnectRequest } from '../models/connect-request';
+import { CommandRequest } from '../terminal/models/command-request';
+import { ConnectResponse } from '../terminal/models/connect-response';
+import { CommandResponse } from '../terminal/models/command-response';
+import { ConnectRequest } from '../terminal/models/connect-request';
 
 @Injectable({
   providedIn: 'root'

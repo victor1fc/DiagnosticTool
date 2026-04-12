@@ -25,8 +25,20 @@ export class AppMenu {
                 items: [{ label: 'Dashboard', icon: 'pi pi-fw pi-home', routerLink: ['/'] }]
             },
             {
-                label: 'DiagnosticTool',
-                items: [{ label: 'Diagnostic', icon: 'pi pi-fw pi-cog', routerLink: ['/terminal'] }]
+                label: 'Diagnostic',
+                items: [{ label: 'Monitor', icon: 'pi pi-fw pi-cog', routerLink: ['/monitor'] }]
+            },
+            {
+                label: 'Cadastros',
+                icon: 'pi pi-fw pi-briefcase',
+                routerLink: ['/register'],
+                items: [
+                    {
+                        label: 'Dispositivos',
+                        icon: 'pi pi-fw pi-microchip',
+                        routerLink: ['/register/device']
+                    },
+                ]
             },
             {
                 label: 'UI Components',

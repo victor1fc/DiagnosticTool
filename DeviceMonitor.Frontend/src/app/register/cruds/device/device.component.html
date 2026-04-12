@@ -1,0 +1,94 @@
+    <p-toolbar styleClass="mb-6">
+            <ng-template #start>
+                <p-button label="New" icon="pi pi-plus" severity="secondary" class="mr-2" (onClick)="openNew()" />
+                <p-button severity="secondary" label="Delete" icon="pi pi-trash" outlined (onClick)="deleteSelectedDevices()" [disabled]="!selectedDevices || !selectedDevices.length" />
+            </ng-template>
+
+            <ng-template #end>
+                <p-button label="Export" icon="pi pi-upload" severity="secondary" (onClick)="exportCSV()" />
+            </ng-template>
+        </p-toolbar>
+
+        <p-table
+            #dt
+            [value]="devices"
+            [rows]="10"
+            [columns]="cols"
+            [paginator]="true"
+            [globalFilterFields]="['name', 'country.name', 'representative.name', 'status']"
+            [tableStyle]="{ 'min-width': '75rem' }"
+            [(selection)]="selectedDevices"
+            [rowHover]="true"
+            dataKey="id"
+            currentPageReportTemplate="Showing {first} to {last} of {totalRecords} products"
+            [showCurrentPageReport]="true"
+            [rowsPerPageOptions]="[10, 20, 30]"
+        >
+            <ng-template #caption>
+                <div class="flex items-center justify-between">
+                    <h5 class="m-0">Manage Devices</h5>
+                    <p-iconfield>
+                        <p-inputicon styleClass="pi pi-search" />
+                        <input pInputText type="text" (input)="onGlobalFilter(dt, $event)" placeholder="Search..." />
+                    </p-iconfield>
+                </div>
+            </ng-template>
+            <ng-template #header>
+                <tr>
+                    <th style="width: 3rem">
+                        <p-tableHeaderCheckbox />
+                    </th>
+                    <th style="min-width: 16rem">Code</th>
+                    <th pSortableColumn="macAddress" style="min-width:16rem">
+                        MAC Address
+                        <p-sortIcon field="macAddress" />
+                    </th>
+
+                    <th pSortableColumn="status" style="min-width: 12rem">
+                        Status
+                        <p-sortIcon field="status" />
+                    </th>
+                    <th style="min-width: 12rem"></th>
+                </tr>
+            </ng-template>
+            <ng-template #body let-device>
+                <tr>
+                    <td style="width: 3rem">
+                        <p-tableCheckbox [value]="device" />
+                    </td>
+                    <td style="min-width: 12rem">{{ device.code }}</td>
+                    <td style="min-width: 16rem">{{ device.macAddress }}</td>
+                    <td>
+                        <p-tag [value]="device.status" [severity]="getSeverity(device.status)" />
+                    </td>
+                    <td>
+                        <p-button icon="pi pi-pencil" class="mr-2" [rounded]="true" [outlined]="true" (click)="editProduct(device)" />
+                        <p-button icon="pi pi-trash" severity="danger" [rounded]="true" [outlined]="true" (click)="deleteProduct(device)" />
+                    </td>
+                </tr>
+            </ng-template>
+        </p-table>
+
+        <p-dialog [(visible)]="deviceDialog" [style]="{ width: '450px' }" header="Device Details" [modal]="true">
+            <ng-template #content>
+                <div class="flex flex-col gap-6">
+                    <div>
+                        <label for="code" class="block font-bold mb-3">Code</label>
+                        <input type="text" pInputText id="code" [(ngModel)]="device.code" required autofocus fluid />
+                        <small class="text-red-500" *ngIf="submitted && !device.code">Code is required.</small>
+                    </div>
+                    <div>
+                        <label for="macAddress" class="block font-bold mb-3">MAC Address</label>
+                        <input type="text" pInputText id="code" [(ngModel)]="device.macAddress" required autofocus fluid />
+                        <small class="text-red-500" *ngIf="submitted && !device.macAddress">MAC Address is required.</small>
+                    </div>
+                </div>
+            </ng-template>
+
+            <ng-template #footer>
+                <p-button label="Cancel" icon="pi pi-times" text (click)="hideDialog()" />
+                <p-button label="Save" icon="pi pi-check" (click)="saveDevice(device)" />
+            </ng-template>
+        </p-dialog>
+
+        <p-confirmdialog [style]="{ width: '450px' }" />

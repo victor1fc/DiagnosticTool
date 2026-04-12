@@ -1,16 +1,15 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { TerminalService } from '../../services/terminal.service';
-import { CommandRequest } from '../../models/command-request';
+import { TerminalService } from '../service/terminal.service';
+import { CommandRequest } from './models/command-request';
 import { Subscription } from 'rxjs';
-import { Status } from '../../enums/status.enum';
-import { ConnectRequest } from '../../models/connect-request';
+import { Status } from './enums/status.enum';
+import { ConnectRequest } from './models/connect-request';
 import { CommonModule } from '@angular/common';
+import { Button } from "primeng/button";
 
 @Component({
   selector: 'app-terminal',
-  imports: [CommonModule,
-
-  ],
+  imports: [CommonModule, Button],
   templateUrl: './terminal.component.html',
   styleUrl: './terminal.component.css'
 })
